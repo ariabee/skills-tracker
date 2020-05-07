@@ -58,7 +58,7 @@ public class SkillsController {
                                      @RequestParam String firstChoice,
                                      @RequestParam String secondChoice,
                                      @RequestParam String thirdChoice) {
-        String html = "<h1>" + name + "</h1>" +
+        String html = "<h1>" + ((name==null || name=="") ? "Dear Anon" : name) + "</h1>" +
                 "<ol>" +
                 "<li>" + firstChoice + "</li>" +
                 "<li>" + secondChoice + "</li>" +
